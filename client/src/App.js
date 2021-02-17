@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import AppNavbar from './components/AppNavbar'
+import ShoppingList from './components/ShoppingList'
 
 import 'bootstrap/dist/css/bootstrap.css';
-import './App.css';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello There</h1>
+      <AppNavbar/>
+      <ShoppingList/>
     </div>
   );
 }
