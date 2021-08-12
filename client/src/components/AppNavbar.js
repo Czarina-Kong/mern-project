@@ -9,6 +9,7 @@ import {
     NavLink,
     Container
 } from 'reactstrap';
+import { Link } from 'react-router-dom'
 
 class AppNavbar extends Component {
     state = {
@@ -30,6 +31,15 @@ class AppNavbar extends Component {
                         <NavbarToggler onClick={this.toggle} />
                         <Collapse isOpen={this.state.isOpen} navbar>
                             <Nav className="ml-auto" navbar>
+                                <NavItem>
+                                    <NavLink href="/page1">Page1</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/page2">Page2</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="/page3">Page3</NavLink>
+                                </NavItem>
                                 <NavItem>
                                     <NavLink href="https://github.com/Czarina-Kong">
                                         Github
